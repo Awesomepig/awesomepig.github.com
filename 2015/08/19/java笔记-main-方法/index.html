@@ -26,7 +26,7 @@
 
 
 
-  <meta name="keywords" content="markdown," />
+  <meta name="keywords" content="java,main,修饰符," />
 
 
 
@@ -35,16 +35,15 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="Welcome !">
+<meta name="description" content="给 java程序入口方法 一个名正言顺的身份!">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2015/08/10/hello-world/index.html">
+<meta property="og:title" content="<center>java笔记_main()方法</center>">
+<meta property="og:url" content="http://yoursite.com/2015/08/19/java笔记-main-方法/index.html">
 <meta property="og:site_name" content="Eric Blog">
-<meta property="og:description" content="Welcome !">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/710c10ddgw1euzz1u3cf0j20ds09578x.jpg">
+<meta property="og:description" content="给 java程序入口方法 一个名正言顺的身份!">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome !">
+<meta name="twitter:title" content="<center>java笔记_main()方法</center>">
+<meta name="twitter:description" content="给 java程序入口方法 一个名正言顺的身份!">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -54,7 +53,7 @@
   };
 </script>
 
-  <title> Hello World | Eric Blog </title>
+  <title> <center>java笔记_main()方法</center> | Eric Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -169,7 +168,7 @@
           
           
             
-              Hello World
+              <center>java笔记_main()方法</center>
             
           
         </h1>
@@ -178,11 +177,26 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-08-10T17:57:29+08:00" content="2015-08-10">
-            2015-08-10
+          <time itemprop="dateCreated" datetime="2015-08-19T14:28:45+08:00" content="2015-08-19">
+            2015-08-19
           </time>
         </span>
 
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/java/" itemprop="url" rel="index">
+                  <span itemprop="name">java</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
         
 
         
@@ -197,7 +211,23 @@
       
 
       
-        <span itemprop="articleBody"><p><center><strong>Welcome !</strong></center><br><a id="more"></a><br><img src="http://ww1.sinaimg.cn/large/710c10ddgw1euzz1u3cf0j20ds09578x.jpg" alt="more" title="always hungry"></p>
+        <span itemprop="articleBody"><p>给 <code>java程序入口方法</code> 一个名正言顺的身份!<br><a id="more"></a></p>
+<hr>
+<h4 id="一-_override_和_overload">一. override 和 overload</h4><p>main()方法  不可以 <code>override</code>(覆盖重写),<br>main()方法 可以 <code>overload</code> (重载).</p>
+<blockquote>
+<p>原因:<br>&emsp;&emsp; main()方法是静态的,静态的数据会直接绑定到内存,不可以被覆盖重写 <code>override</code><br>&emsp;&emsp; main()方法可以被重写,但是,只有 <code>public static void main(String[] args)</code> 规范的方法才会被 <code>jvm</code> 识别为程序入口.</p>
+</blockquote>
+<h4 id="二-修饰符/返回值/方法名/参数_可以为其他的么?">二.修饰符/返回值/方法名/参数 可以为其他的么?</h4><p>不可以!</p>
+<blockquote>
+<p>修饰符: 只能为<code>public</code>,其他的会导致<code>jvm</code>无权限调用;<br>返回值: 只能是<code>void</code>,无返回<br>方法名: 只能是<code>main</code><br>参数: 只能是 <code>String []</code> 类型,参数名<code>args</code> 可以为其他<br>其他修饰符: 除了static、void、和public，你可以使用final，synchronized、和strictfp修饰符在main方法的签名中</p>
+<blockquote>
+<p>修饰符: 返回值之前的修饰符们,是没有顺序的</p>
+</blockquote>
+</blockquote>
+<p><hr></p>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/" target="_blank" rel="external">StackEdit</a>.</p>
+</blockquote>
 </span>
       
     </div>
@@ -206,7 +236,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/markdown/" rel="tag">#markdown</a>
+            <a href="/tags/java/" rel="tag">#java</a>
+          
+            <a href="/tags/main/" rel="tag">#main</a>
+          
+            <a href="/tags/修饰符/" rel="tag">#修饰符</a>
           
         </div>
       
@@ -215,11 +249,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/08/11/关于markdown的总结/" rel="prev">关于markdown的总结</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/08/19/js-dom选择/" rel="next">js_dom选择</a>
             
           </div>
         </div>
@@ -323,7 +357,7 @@
           <div class="post-toc">
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一-_override_和_overload"><span class="nav-number">1.</span> <span class="nav-text">一. override 和 overload</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二-修饰符/返回值/方法名/参数_可以为其他的么?"><span class="nav-number">2.</span> <span class="nav-text">二.修饰符/返回值/方法名/参数 可以为其他的么?</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
